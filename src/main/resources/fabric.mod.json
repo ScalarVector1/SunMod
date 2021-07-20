@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "sunmod",
   "version": "${version}",
 
   "name": "Example Mod",
@@ -19,11 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fabricmc.sunmod.SunMod"
+    ],
+    "client": [
+      "net.fabricmc.sunmod.SunModClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "sunmod.mixins.json"
   ],
 
   "depends": {
